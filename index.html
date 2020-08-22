@@ -1,0 +1,485 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- CSS links -->
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+
+    <title>Practice of jQuery UI</title>
+  </head>
+  <body>
+
+    <!-- Container-1 -->
+    <div class="container border py-3 mt-3">
+      <div id="draggable" class="ui-widget-content">
+        <p>Drag me around</p>
+      </div>
+    </div>
+
+    <!-- Container-2 -->
+    <div class="container border py-3 mt-3">
+      <h3>Constrain movement along an axis:</h3>
+ 
+      <div id="draggable1" class="draggable1 ui-widget-content">
+        <p>I can be dragged only vertically</p>
+      </div>
+       
+      <div id="draggable2" class="draggable1 ui-widget-content">
+        <p>I can be dragged only horizontally</p>
+      </div>
+       
+      <h3>Or to within another DOM element:</h3>
+      <div id="containment-wrapper">
+        <div id="draggable3" class="draggable1 ui-widget-content">
+          <p>I'm contained within the box</p>
+        </div>
+       
+        <div class="draggable1 ui-widget-content">
+          <p id="draggable4" class="ui-widget-header">I'm contained within my parent</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Container-3 -->
+    <div class="container border py-3 mt-3">
+      <div id="draggable5" class="ui-widget ui-widget-content">
+ 
+        <p>Drag me to trigger the chain of events.</p>
+       
+        <ul class="ui-helper-reset">
+          <li id="event-start" class="ui-state-default ui-corner-all"><span class="ui-icon ui-icon-play"></span>"start" invoked <span class="count">0</span>x</li>
+          <li id="event-drag" class="ui-state-default ui-corner-all"><span class="ui-icon ui-icon-arrow-4"></span>"drag" invoked <span class="count">0</span>x</li>
+          <li id="event-stop" class="ui-state-default ui-corner-all"><span class="ui-icon ui-icon-stop"></span>"stop" invoked <span class="count">0</span>x</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Container-4 -->
+    <div class="container custom_con border py-3 mt-3">
+      <div id="draggable6" class="ui-widget-content">
+        <p>I revert when I'm dropped</p>
+      </div>
+       
+      <div id="draggable7" class="ui-widget-content">
+        <p>I revert when I'm not dropped</p>
+      </div>
+       
+      <div id="droppable" class="ui-widget-header">
+        <p>Drop me here</p>
+      </div>
+    </div>
+
+    <!-- Container-5 -->
+    <div class="container custom_con2 border py-3 mt-3">
+      <div id="resizable" class="ui-widget-content">
+        <h3 class="ui-widget-header">Animate</h3>
+      </div>
+    </div>
+
+    <!-- Container-6 -->
+    <div class="container custom_con3 border py-3 mt-3">
+      <ol id="selectable">
+        <li class="ui-state-default">1</li>
+        <li class="ui-state-default">2</li>
+        <li class="ui-state-default">3</li>
+        <li class="ui-state-default">4</li>
+        <li class="ui-state-default">5</li>
+        <li class="ui-state-default">6</li>
+        <li class="ui-state-default">7</li>
+        <li class="ui-state-default">8</li>
+        <li class="ui-state-default">9</li>
+        <li class="ui-state-default">10</li>
+        <li class="ui-state-default">11</li>
+        <li class="ui-state-default">12</li>
+      </ol>
+    </div>
+
+    <!-- Container-7 -->
+    <div class="container border py-3 mt-3">
+      <ul id="sortable">
+        <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 1</li>
+        <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 2</li>
+        <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 3</li>
+        <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 4</li>
+        <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 5</li>
+        <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 6</li>
+        <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 7</li>
+      </ul>
+    </div>
+
+    <!-- Container-8 -->
+    <div class="container custom_con4 border py-3 mt-3">
+      <div id="accordion">
+        <h3>Section 1</h3>
+        <div>
+          <p>Mauris mauris ante, blandit et, ultrices a, susceros. Nam mi. Proin viverra leo ut odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.</p>
+        </div>
+        <h3>Section 2</h3>
+        <div>
+          <p>Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In suscipit faucibus urna. </p>
+        </div>
+        <h3>Section 3</h3>
+        <div>
+          <p>Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis. Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui. </p>
+          <ul>
+            <li>List item</li>
+            <li>List item</li>
+            <li>List item</li>
+            <li>List item</li>
+            <li>List item</li>
+            <li>List item</li>
+            <li>List item</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Container-9 PROBLEM -->
+    <div class="container custom_con5 border py-3 mt-3">
+      <div class="ui-widget">
+        <label>Your preferred programming language: </label>
+        <select id="combobox">
+          <option value="">Select one...</option>
+          <option value="ActionScript">ActionScript</option>
+          <option value="AppleScript">AppleScript</option>
+          <option value="Asp">Asp</option>
+          <option value="BASIC">BASIC</option>
+          <option value="C">C</option>
+          <option value="C++">C++</option>
+          <option value="Clojure">Clojure</option>
+          <option value="COBOL">COBOL</option>
+          <option value="ColdFusion">ColdFusion</option>
+          <option value="Erlang">Erlang</option>
+          <option value="Fortran">Fortran</option>
+          <option value="Groovy">Groovy</option>
+          <option value="Haskell">Haskell</option>
+          <option value="Java">Java</option>
+          <option value="JavaScript">JavaScript</option>
+          <option value="Lisp">Lisp</option>
+          <option value="Perl">Perl</option>
+          <option value="PHP">PHP</option>
+          <option value="Python">Python</option>
+          <option value="Ruby">Ruby</option>
+          <option value="Scala">Scala</option>
+          <option value="Scheme">Scheme</option>
+        </select>
+        <!-- <span class="ui-button-icon ui-icon ui-icon-triangle-1-s"></span> -->
+      </div>
+      <button id="toggle">Show underlying select</button>
+      <h1 class="text-danger">The icon(a) doesn't display</h1>
+    </div>
+
+    <!-- Container-10 -->
+    <div class="container custom_con4 border py-3 mt-3">
+      <div class="widget">
+        <h1>Widget</h1>
+        <button class="ui-button ui-widget ui-corner-all">
+          Button with only text
+        </button>
+        <button class="ui-button ui-widget ui-corner-all ui-button-icon-only" title="Button with icon only">
+          <span class="ui-icon ui-icon-gear"></span> Button with icon only
+        </button>
+        <button class="ui-button ui-widget ui-corner-all">
+          <span class="ui-icon ui-icon-gear"></span> Button with icon on the left
+        </button>
+        <button class="ui-button ui-widget ui-corner-all">
+          Button with icon on the right <span class="ui-icon ui-icon-gear"></span>
+        </button>
+        <button class="ui-button ui-widget ui-corner-all">
+          <span class="ui-icon ui-icon-gear ui-widget-icon-block"></span> Button with icon on the top
+        </button>
+        <button class="ui-button ui-widget ui-corner-all">
+          Button with icon on the bottom <span class="ui-icon ui-icon-gear ui-widget-icon-block"></span>
+        </button>
+      </div>
+      <div class="css">
+        <h1>CSS</h1>
+        <button class="ui-button ui-widget ui-corner-all">
+          Button with only text
+        </button>
+        <button class="ui-button ui-widget ui-corner-all ui-button-icon-only" title="Button with icon only">
+          <span class="ui-icon ui-icon-gear"></span> Button with icon only
+        </button>
+        <button class="ui-button ui-widget ui-corner-all">
+          <span class="ui-icon ui-icon-gear"></span> Button with icon on the left
+        </button>
+        <button class="ui-button ui-widget ui-corner-all">
+          Button with icon on the right <span class="ui-icon ui-icon-gear"></span>
+        </button>
+        <button class="ui-button ui-widget ui-corner-all">
+          <span class="ui-icon ui-icon-gear ui-widget-icon-block"></span> Button with icon on the top
+        </button>
+        <button class="ui-button ui-widget ui-corner-all">
+          Button with icon on the bottom <span class="ui-icon ui-icon-gear ui-widget-icon-block"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Bottom Button -->
+    <div class="container p-5">
+      <div class="row justify-content-center text-center">
+        <div class="col-4">
+          <a href="index2.html" class="btn btn-info font-weight-bold px-3 py-2">Next Page</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- JS links -->
+    <script src="js/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+      $(function(){
+
+        // Container-1
+        $("#draggable").draggable();
+
+        // Container-2
+        $( "#draggable1" ).draggable({ axis: "y" });
+        $( "#draggable2" ).draggable({ axis: "x" });
+     
+        $( "#draggable3" ).draggable({ containment: "#containment-wrapper", scroll: false });
+        $( "#draggable4" ).draggable({ containment: "parent" });
+
+        // Container-3
+        var $start_counter = $( "#event-start" ),
+        $drag_counter = $( "#event-drag" ),
+        $stop_counter = $( "#event-stop" ),
+        counts = [ 0, 0, 0 ];
+ 
+        $( "#draggable5" ).draggable({
+          start: function() {
+            counts[ 0 ]++;
+            updateCounterStatus( $start_counter, counts[ 0 ] );
+          },
+          drag: function() {
+            counts[ 1 ]++;
+            updateCounterStatus( $drag_counter, counts[ 1 ] );
+          },
+          stop: function() {
+            counts[ 2 ]++;
+            updateCounterStatus( $stop_counter, counts[ 2 ] );
+          }
+        });
+     
+        function updateCounterStatus( $event_counter, new_count ) {
+          // first update the status visually...
+          if ( !$event_counter.hasClass( "ui-state-hover" ) ) {
+            $event_counter.addClass( "ui-state-hover" )
+              .siblings().removeClass( "ui-state-hover" );
+          }
+          // ...then update the numbers
+          $( "span.count", $event_counter ).text( new_count );
+        }
+
+        // Container-4
+        $( "#draggable6" ).draggable({ revert: "valid" });
+        $( "#draggable7" ).draggable({ revert: "invalid" });
+     
+        $( "#droppable" ).droppable({
+          classes: {
+            "ui-droppable-active": "ui-state-active",
+            "ui-droppable-hover": "ui-state-hover"
+          },
+          drop: function( event, ui ) {
+            $( this )
+              .addClass( "ui-state-highlight" )
+              .find( "p" )
+                .html( "Dropped!" );
+          }
+        });
+
+        // Container-5
+        $( "#resizable" ).resizable({
+          animate: true
+        });
+
+        // Container-6
+        $( "#selectable" ).selectable();
+
+        // Container-7
+        $( "#sortable" ).sortable();
+        $( "#sortable" ).disableSelection();
+
+        // Container-8
+        $( "#accordion" ).accordion({
+          heightStyle: "content",
+          collapsible: true
+        });
+      });
+    </script>
+
+
+    <script>
+      // Container-9 PROBLEM
+      $( function() {
+        $.widget( "custom.combobox", {
+          _create: function() {
+            this.wrapper = $( "<span>" )
+              .addClass( "custom-combobox" )
+              .insertAfter( this.element );
+     
+            this.element.hide();
+            this._createAutocomplete();
+            this._createShowAllButton();
+          },
+     
+          _createAutocomplete: function() {
+            var selected = this.element.children( ":selected" ),
+              value = selected.val() ? selected.text() : "";
+     
+            this.input = $( "<input>" )
+              .appendTo( this.wrapper )
+              .val( value )
+              .attr( "title", "" )
+              .addClass( "custom-combobox-input ui-widget ui-widget-content ui-state-default ui-corner-left" )
+              .autocomplete({
+                delay: 0,
+                minLength: 0,
+                source: $.proxy( this, "_source" )
+              })
+              .tooltip({
+                classes: {
+                  "ui-tooltip": "ui-state-highlight"
+                }
+              });
+     
+            this._on( this.input, {
+              autocompleteselect: function( event, ui ) {
+                ui.item.option.selected = true;
+                this._trigger( "select", event, {
+                  item: ui.item.option
+                });
+              },
+     
+              autocompletechange: "_removeIfInvalid"
+            });
+          },
+     
+          _createShowAllButton: function() {
+            var input = this.input,
+              wasOpen = false;
+     
+            $( "<a>" )
+              .attr( "tabIndex", -1 )
+              .attr( "title", "Show All Items" )
+              .tooltip()
+              .appendTo( this.wrapper )
+              .button({
+                icons: {
+                  primary: "ui-icon-triangle-1-s"
+                },
+                text: false
+              })
+              .removeClass( "ui-corner-all" )
+              .addClass( "custom-combobox-toggle ui-corner-right" )
+              .on( "mousedown", function() {
+                wasOpen = input.autocomplete( "widget" ).is( ":visible" );
+              })
+              .on( "click", function() {
+                input.trigger( "focus" );
+     
+                // Close if already visible
+                if ( wasOpen ) {
+                  return;
+                }
+     
+                // Pass empty string as value to search for, displaying all results
+                input.autocomplete( "search", "" );
+              });
+          },
+     
+          _source: function( request, response ) {
+            var matcher = new RegExp( $.ui.autocomplete.escapeRegex(request.term), "i" );
+            response( this.element.children( "option" ).map(function() {
+              var text = $( this ).text();
+              if ( this.value && ( !request.term || matcher.test(text) ) )
+                return {
+                  label: text,
+                  value: text,
+                  option: this
+                };
+            }));
+          },
+     
+          _removeIfInvalid: function( event, ui ) {
+     
+            // Selected an item, nothing to do
+            if ( ui.item ) {
+              return;
+            }
+     
+            // Search for a match (case-insensitive)
+            var value = this.input.val(),
+              valueLowerCase = value.toLowerCase(),
+              valid = false;
+            this.element.children( "option" ).each(function() {
+              if ( $( this ).text().toLowerCase() === valueLowerCase ) {
+                this.selected = valid = true;
+                return false;
+              }
+            });
+     
+            // Found a match, nothing to do
+            if ( valid ) {
+              return;
+            }
+     
+            // Remove invalid value
+            this.input
+              .val( "" )
+              .attr( "title", value + " didn't match any item" )
+              .tooltip( "open" );
+            this.element.val( "" );
+            this._delay(function() {
+              this.input.tooltip( "close" ).attr( "title", "" );
+            }, 2500 );
+            this.input.autocomplete( "instance" ).term = "";
+          },
+     
+          _destroy: function() {
+            this.wrapper.remove();
+            this.element.show();
+          }
+        });
+     
+        $( "#combobox" ).combobox();
+        $( "#toggle" ).on( "click", function() {
+          $( "#combobox" ).toggle();
+        });
+      });
+    </script>
+
+    <script>
+      // Container-10
+      $( function() {
+        $( ".widget button" )
+          .eq( 0 ).button()
+          .end().eq( 1 ).button( {
+            icon: "ui-icon-gear",
+            showLabel: false
+          } ).end().eq( 2 ).button( {
+            icon: "ui-icon-gear"
+          } ).end().eq( 3 ).button( {
+            icon: "ui-icon-gear",
+            iconPosition: "end"
+          } ).end().eq( 4 ).button( {
+            icon: "ui-icon-gear",
+            iconPosition: "top"
+          } ).end().eq( 5 ).button( {
+            icon: "ui-icon-gear",
+            iconPosition: "bottom"
+        });
+      });
+    </script>
+  </body>
+</html>

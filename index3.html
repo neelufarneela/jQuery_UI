@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- CSS links -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+
+    <title>Practice of jQuery UI</title>
+  </head>
+  <body>
+    <!-- Plugin-1 -->
+    <div class="container border py-3 mt-3">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="counter d-inline-block mr-5">1,234,567.00</h1>
+          <h1 class="d-inline-block">$</h1><h1 class="counter d-inline-block mr-5">1.99</h1>
+          <h1 class="counter d-inline-block">12345</h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- Plugin-2 -->
+    <div class="container border py-3 mt-3">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="parallax-window" data-parallax="scroll" data-image-src="images/background.jpg"></div>
+        </div>
+        <div class="col-md-12">
+          <div class="parallax-window" data-parallax="scroll" data-image-src="images/background.jpg"></div>
+        </div>
+        <div class="col-md-12">
+          <div class="parallax-window" data-parallax="scroll" data-image-src="images/background.jpg"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Button -->
+    <div class="container p-5">
+      <div class="row justify-content-center text-center">
+        <div class="col-4">
+          <a href="index.html" class="btn btn-info font-weight-bold px-3 py-2">Home Page</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- JS links -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Plugin js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="assets/Counter-Up-master/jquery.counterup.min.js"></script>
+    <script src="assets/parallax.js-master/parallax.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script> -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+      jQuery(document).ready(function($) {
+        $('.counter').counterUp({
+          delay: 10,
+          time: 1000
+        });
+      });
+    </script>
+  </body>
+</html>

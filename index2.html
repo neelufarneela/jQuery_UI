@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- CSS links -->
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+
+    <title>Practice of jQuery UI</title>
+  </head>
+  <body>
+    <!-- Container-11 -->
+    <div class="container border py-3 mt-3">
+      <div class="controls">
+        <div class="brand-wrap">
+          <h3>1.) Select a brand</h3>
+          <div class="brand">
+            <label for="brand-jquery">jQuery</label>
+            <input type="radio" name="brand" id="brand-jquery" data-background-color="#0769AD" data-color="#7ACEF4" data-background-image="url(images/jquery.png)">
+            <label for="brand-jquery-ui">jQuery UI</label>
+            <input type="radio" name="brand" id="brand-jquery-ui" data-background-color="#B24926" data-color="#FAA523" data-background-image="url(images/jquery-ui.png)" checked>
+            <label for="brand-jquery-mobile">jQuery Mobile</label>
+            <input type="radio" name="brand" id="brand-jquery-mobile" data-background-color="#108040" data-color="#3EB249" data-background-image="url(images/jquery-mobile.png)">
+            <label for="brand-sizzle">Sizzle</label>
+            <input type="radio" name="brand" id="brand-sizzle" data-background-color="#9A1B1E" data-color="#FAA523" data-background-image="url(images/sizzle.png)">
+            <label for="brand-qunit">QUnit</label>
+            <input type="radio" name="brand" id="brand-qunit" data-background-color="#390F39" data-color="#9C3493" data-background-image="url(images/qunit.png)">
+          </div>
+        </div>
+        <div class="shape-wrap">
+          <h3>2.) Select a shape</h3>
+          <div class="shape-bar">
+            <label for="shape-circle">Circle</label>
+            <input type="radio" name="shape" id="shape-circle" value="circle" checked>
+            <label for="shape-square">Square</label>
+            <input type="radio" name="shape" id="shape-square" value="square">
+            <label for="shape-pill">Pill</label>
+            <input type="radio" name="shape" id="shape-pill" value="pill">
+            <label for="shape-rectangle">Rectangle</label>
+            <input type="radio" name="shape" id="shape-rectangle" value="rectangle">
+          </div>
+        </div>
+        <div class="toggle-wrap">
+          <h3>3.) Customize</h3>
+          <div class="toggles">
+            <label for="color">Shadow</label>
+            <input class="toggle brand-toggle" type="checkbox" name="color" id="color">
+            <label for="border">Border</label>
+            <input class="toggle" type="checkbox" name="border" id="border">
+            <label for="background-color">Background</label>
+            <input class="toggle brand-toggle" type="checkbox" name="background-color" id="background-color" checked>
+            <label for="background-image">Background Image</label>
+            <input class="toggle brand-toggle" type="checkbox" name="background-image" id="background-image" checked>
+          </div>
+        </div>
+        <div class="shape circle background jquery-ui"></div>
+      </div>
+    </div>
+
+    <!-- Container-12 -->
+    <div class="container custom_con6 border py-3 mt-3">
+      <div class="widget">
+        <h1>Controlgroup</h1>
+        <fieldset>
+          <legend>Rental Car</legend>
+          <div class="controlgroup">
+            <select id="car-type">
+              <option>Compact car</option>
+              <option>Midsize car</option>
+              <option>Full size car</option>
+              <option>SUV</option>
+              <option>Luxury</option>
+              <option>Truck</option>
+              <option>Van</option>
+            </select>
+            <label for="transmission-standard">Standard</label>
+            <input type="radio" name="transmission" id="transmission-standard">
+            <label for="transmission-automatic">Automatic</label>
+            <input type="radio" name="transmission" id="transmission-automatic">
+            <label for="insurance">Insurance</label>
+            <input type="checkbox" name="insurance" id="insurance">
+            <label for="horizontal-spinner" class="ui-controlgroup-label"># of cars</label>
+            <input id="horizontal-spinner" class="ui-spinner-input">
+            <button>Book Now!</button>
+          </div>
+        </fieldset>
+        <br>
+        <fieldset>
+          <legend>Rental Car</legend>
+          <div class="controlgroup-vertical ui-controlgroup ui-controlgroup-vertical">
+            <select>
+              <option>Compact car</option>
+              <option>Midsize car</option>
+              <option>Full size car</option>
+              <option>SUV</option>
+              <option>Luxury</option>
+              <option>Truck</option>
+              <option>Van</option>
+            </select>
+            <label for="transmission-standard-v">Standard</label>
+            <input type="radio" name="transmission-v" id="transmission-standard-v">
+            <label for="transmission-automatic-v">Automatic</label>
+            <input type="radio" name="transmission-v" id="transmission-automatic-v">
+            <label for="insurance-v">Insurance</label>
+            <input type="checkbox" name="insurance" id="insurance-v">
+            <label for="vertical-spinner" class="ui-controlgroup-label"># of cars</label>
+            <input id="vertical-spinner" class="ui-spinner-input">
+            <button id="book">Book Now!</button>
+          </div>
+        </fieldset>
+      </div>
+    </div>
+
+    <!-- Container-13 -->
+    <div class="container custom_con5 border py-3 mt-3">
+      <p>
+        Date: 
+        <input type="text" id="datepicker">
+        <img class="ui-datepicker-trigger" src="images/calendar.gif" alt="Select date" title="Select date">
+      </p>
+
+    </div>
+
+    <!-- Bottom Button -->
+    <div class="container p-5">
+      <div class="row justify-content-center text-center">
+        <div class="col-3">
+          <a href="index.html" class="btn btn-info font-weight-bold px-3 py-2">Home Page</a>
+        </div>
+        <div class="col-3">
+          <a href="index3.html" class="btn btn-info font-weight-bold px-3 py-2">Next Page</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- JS links -->
+    <script src="js/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script> -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+      // Container-11
+      $( function() {
+      function handleShape( e ) {
+        $( ".shape" )
+          .removeClass( "circle pill square rectangle" )
+          .addClass( $( e.target ).val() );
+      };
+      function handleToggle( e ) {
+        var target = $( e.target );
+   
+        if ( target.is( ".brand-toggle" ) ) {
+          var checked = target.is( ":checked" ),
+            value = $( "[name='brand']" )
+              .filter( ":checked" )
+              .attr( "data-" + target[ 0 ].id )
+          $( ".shape" ).css( target[ 0 ].id, checked ? value : "" );
+        } else {
+          $( ".shape" ).toggleClass( target[ 0 ].id, target.is( ":checked") );
+        }
+      }
+      function updateBrand() {
+        handleShape( { target: $( "[name='shape']:checked" ) } );
+        $( ".toggle:checked" ).each( function() {
+          handleToggle( { target: $( this ) } );
+        } );
+      }
+   
+      // Initalize widgets
+      $( "input" ).checkboxradio();
+      $( ".shape-bar, .brand" ).controlgroup();
+      $( ".toggles" ).controlgroup( {
+        direction: "vertical"
+      } );
+   
+      // Bind event handlers
+      $( "[name='shape']").on( "change", handleShape );
+      $( ".toggle" ).on( "change", handleToggle );
+      $( "[name='brand']").on( "change", updateBrand );
+   
+      // Set initial values
+      updateBrand();
+
+      // Container-12
+      $( ".controlgroup" ).controlgroup()
+      $( ".controlgroup-vertical" ).controlgroup({
+        "direction": "vertical"
+      });
+
+      // Container-13
+      $( "#datepicker" ).datepicker({
+        showOn: "button",
+        buttonImage: "images/calendar.gif",
+        buttonImageOnly: true,
+        buttonText: "Select date"
+      });
+    });
+  </script>
+  </body>
+</html>
